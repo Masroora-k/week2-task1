@@ -1,0 +1,785 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/* --------------------------------- NAVBAR---------------------------- */
+
+.navbar .left_side_nav{
+     font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navbar .navbar-nav{
+    padding: 8px 0px;
+}
+.navbar .navbar-nav .nav-item{
+    
+    height: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.navbar .navbar-nav .nav-item:hover{
+    background: #2c2c2c;
+}
+
+.navbar .navbar-nav .nav-link{
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-item .arrow_up{
+    display: none;
+}
+.nav-item:focus-within .arrow_down{
+    display: none;
+}
+.nav-item:focus-within .arrow_up{
+    display: block;
+}
+.navbar .right_side_nav{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar .left_side_nav .lng_help{
+    list-style: none;
+    padding: 8px 0px;
+}
+.navbar .left_side_nav .lng_help li{
+    height: 35px;
+}
+.navbar .left_side_nav .rght-btns {
+    border: none;
+    padding: 5px 12px;
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    background: #000;
+}
+.navbar .left_side_nav .rght-btns svg{
+    color: #fff;
+    margin-right: 5px;
+}
+.navbar .left_side_nav .rght-btns:hover{
+    background: #2c2c2c;
+}
+.navbar .right_side_nav ul{
+    list-style: none;
+    padding: 8px 60px 0px 2px;
+    height: 67px;
+    margin-bottom: 0;
+}
+.navbar .right_side_nav ul li{
+    height: 40px;
+}
+.navbar .right_side_nav .rght-btn{
+    padding: 5px 12px;
+    border: none; 
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 4px;
+    background: #000;
+}
+.navbar .left_side_nav .rght-btns .btn_name{
+    vertical-align: middle;
+}
+.navbar .right_side_nav .signup_btn{
+    padding: 8px 12px;
+    border: none; 
+    font-size: 14px;
+    font-weight: 500;
+    background: #fff;
+}
+.right_side_nav .rght-btn:hover{
+    background: #2c2c2c;
+}
+.right_side_nav .signup_btn:hover{
+    background: #dfdbdb;
+}
+.right_side_nav .toggler_btn .navbar-toggler-icon{
+    background-image: url(  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");  /* change toggler icon color to white */
+}
+
+
+/* ********************* BODY SECTION **************************** */
+.left_sec{
+    
+    padding-top: 83px;
+    padding-left: 50px;
+    padding-right: 14px;
+}
+
+.left_sec .title_part{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 115px;
+}
+.left_sec .title_part h1{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+}
+.left_sec .title_part p{
+    font-size: 17px;
+    color: #fff;
+    font-weight: normal;
+    padding-top: 25px;
+}
+.left_sec .form_part{
+    font-family:  UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+}
+.left_sec .form_part .location{
+    height: 50px;
+    display: flex;
+    background: #ffffff;
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.form_part .location .icon{
+    width: 10%;
+    height: 100%;
+    padding: 16px 14px;
+}
+.form_part .location .user_input1{
+    padding: 10px 10px 10px 0px;
+    width: 70%;
+
+}
+.location .user_input1 input{
+    height: 30px;
+    width: 100%;
+    cursor: text;
+    border: none;
+}
+.location .user_input1 input:focus{
+    border: none;
+    outline: none;
+}
+.location .user_input1 input::placeholder{
+    color: #5E5E5E;
+    font-size: 16px;
+}
+.form_part .location .navigate_icon{
+    width: 20%;
+    padding: 15px;
+}
+.form_part .location .navigate_icon svg{
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+}
+
+.form_part .location .user_input2{
+    padding: 10px 10px 10px 0px;
+    width: 100%;
+
+}
+.location .user_input2 input{
+    height: 30px;
+    width: 100%;
+    cursor: text;
+    border: none;
+}
+
+.location .user_input2 input:focus{ /* When click the text field does'nt show any border or default outline */
+    border: none;
+    outline: none;
+}
+.location .user_input2 input::placeholder{
+    color: #5E5E5E;
+    font-size: 16px;
+}
+.form_part .left_line{
+    width: 50px;
+    height: 42px;
+    position: relative;
+    z-index: 1;
+    top: -26px;
+    left: 23px;
+    border-left: 1px solid #f7f4ee;
+}
+.form_part .price_button{
+    padding: 0px 0px 30px;
+    position: relative;
+    top: -25px;
+
+}
+.form_part .price_button button{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 8px;
+    border: none;
+    color: #000;
+    background-color: #FFFFFF;
+}
+.right_sec{
+    padding:  45px 6px 6px 6px;
+}
+.result-box{
+    background: #f8f9fd;
+    width: 70%;
+    border-radius: 8px;
+    position: absolute;
+    top:50px;
+    z-index: 1;
+    height: 150px;
+    overflow-y: auto;
+    scrollbar-width: none; /* For Firefox */
+    display: none;
+}
+.result-box ul{
+ border-top: 1px solid #999;
+ padding: 15px 10px;
+}
+.result-box ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.result-box ul li:hover{
+    background: #e9f3ff;
+}
+.destination{
+    background: #f8f9fd;
+    width: 70%;
+    border-radius: 8px;
+    position: absolute;
+    top:111px;
+    z-index: 1;
+    height: 150px;
+    overflow-y: auto;
+    scrollbar-width: none; /* For Firefox */
+    display: none;
+}
+.destination ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.destination ul li:hover{
+    background: #e9f3ff;
+}
+
+
+/* ------------------------- 2ND SECTION-------------------- */
+.left_img_sec{
+    padding: 65px 0px 60px 51px;
+}
+.right_signin_sec{
+    padding: 150px 60px 70px 105px;
+}
+.right_signin_sec .description_sec h1{
+        font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 64px;
+        color: #000000;
+}
+.right_signin_sec .description_sec p{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 25px;
+    color: #000000;
+    padding-right: 37px;
+    line-height: 24px;
+}
+ .signin_btn_link_sec{
+    padding-top: 16px;
+    padding-right: 5px;
+}
+.get_start_btn{
+    width: 31%;
+    height: 50px;
+    background-color: #000000;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.signin_btn_link_sec .get_start_btn a{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.get_start_btn:hover{
+    background-color: #262525;
+}
+
+.signin_btn_link_sec .link_for_signin {
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #dfd4d4;
+    color: #000000;
+}
+.signin_btn_link_sec a .signin_link_sec{
+    width: 100%;
+    height: 37px;
+    padding-top: 12px;
+    
+}
+
+/* ------------------------3RD SECTION------------------- */
+
+.left_signin_sec{
+    padding: 160px 84px 70px 49px;
+}
+
+
+.left_signin_sec .description_sec h1{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #333333;
+}
+.left_signin_sec .description_sec p{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 27px;
+    color: #333333;
+    padding-right: 37px;
+    line-height: 24px;
+}
+
+
+/* ------------------------ 4TH SECTION------------------------- */
+
+.right_signin_sec .description_sec h2{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #000000;
+}
+
+
+
+/* ------------------------------- 5TH SECTION ----------------------------- */
+
+.qr_head{
+     padding: 20px 20px 10px 50px
+}
+.qr_head h2{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+}
+.qr_code1{
+    padding: 20px 0px 50px 50px;
+}
+.qr_code2{
+    padding: 20px 50px 50px 0px;
+}
+.qr_code1 .qr_box_left{
+    background: #fff;
+    display: flex;
+    padding: 25px 0px 25px 25px;
+   
+}
+ .qr_code2 .qr_box_right{
+    background: #fff;
+    display: flex;
+    padding: 25px 0px 25px 25px;
+}
+.qr_box_left .uber_app_link{
+    padding: 50px 0px 0px 20px;
+}
+.qr_box_left .uber_app_link h2{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;   
+    color: #000000;
+    line-height: 32px;
+    letter-spacing: 0;
+}
+.qr_box_left .uber_app_link p{
+    letter-spacing: 0;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.qr_box_left .right_arrow_icon{ 
+    padding-left: 65px;
+}
+.qr_box_left .right_arrow_icon svg{
+  position: relative !important;
+}
+
+.qr_box_right .uber_app_link{
+    padding: 50px 0px 0px 20px;
+}
+.qr_box_right .uber_app_link h2{
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;   
+    color: #000000;
+    line-height: 32px;
+    letter-spacing: 0;
+}
+.qr_box_right .uber_app_link p{
+    letter-spacing: 0;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.qr_box_right .right_arrow_icon{ 
+    padding-left: 65px;
+   
+}
+.qr_box_right .right_arrow_icon svg{
+    position: relative !important;
+}
+
+/* ----------------------------------- FOOTER SECTION ------------------------------------ */
+
+footer a{
+    text-decoration: none;
+}
+footer ul{
+    list-style: none;
+}
+.footer_sec1{
+    padding-left: 20px;
+}
+.footer_sec1 .link1{
+    color: #fff;
+    font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 112px;
+}
+.footer_sec1 .link2{
+    color: #FFFFFF;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+}
+.footer_links{
+    padding-top: 100px;
+}
+.footer_links p{
+    padding-left: 20px;
+    color: #FFFFFF;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+.footer_links ul li a{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.footer_links ul{
+   padding-left: 20px;
+}
+.left_side_icon{
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.left_side_icon a{
+    margin-right: 90px;
+    color: #ffffff;
+}
+.right_side_icon{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.right_side_icon button{
+    margin-left: 25px;
+    background: #000000;
+    border: none;
+    margin-bottom: 15px;
+}
+.right_side_icon button div svg{
+    margin-right: 5px;
+    color: #ffffff;
+}
+.right_side_icon button div span{
+    color: #ffffff;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+.app_link{
+    width: 100%;
+    display: flex;
+    padding: 50px 20px;
+}
+.app_link img{
+    width: 130px;
+    height: 50px;
+    margin-right: 10px;
+}
+.left_copyright p{
+    color: #AFAFAF;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+}
+.left_copyright{
+    padding-left: 20px;
+    padding-bottom: 60px;
+}
+.right_legal_sec{
+    padding-bottom: 60px;
+}
+.right_legal_sec a{
+    margin-left: 25px;
+    color: #AFAFAF;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+
+
+/* ---------------------------------------MEDIA QUERIES */
+
+
+@media (max-width: 991.98px) { /* md and below */
+   body{
+        padding: 0 !important;
+    }
+    #offcanvasTop {
+      margin-top: 80px; /* Adjust the value of offcanvasTop toggler part */
+    }
+    .offcanvas-body .nav-item .nav-link{
+        color: #000 !important;
+        font-size: 24px;
+    }
+    .offcanvas-body .rght-btns{
+        background: white !important;
+        color: #000 !important;
+    }
+    .rght-btns svg{
+        color: #000 !important;
+    }
+    .rght-btns .btn_name{
+        color: #000 !important;
+    }
+    .navbar .left_side_nav .navbar-brand{  /* change the position of uber link to the top left*/
+        position: relative;
+        top: -10px;
+        margin-left: 0 !important;
+    }
+    .navbar .right_side_nav ul{
+        padding: 5px 0px 0px 5px;  /* move the ul section to the right end  */
+    }
+    .navbar .navbar-nav .nav-item:hover{
+        background: #f0eded;
+    }
+    .navbar .navbar-nav .nav-item{
+        border-radius: 0 !important;
+    }
+    .navbar .nav_continer{
+        border-bottom: 1px solid  #464545;
+    }
+    .body_sec_row{
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+    }
+    .left_sec{
+        padding: 0;
+    }
+    .left_sec .title_part{
+        margin-top: 0;
+    }
+    .title_part h1{
+        font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+    }
+    .form_part .location{
+        width: 100% !important;
+    }
+    .left_img_sec{
+        padding: 25px 0px;
+    }
+    .right_signin_sec .description_sec h1{
+        font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+    }
+    .right_signin_sec .description_sec p{
+        padding-right: 2px;
+        font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: normal;
+    }
+    .right_signin_sec{
+        padding: 50px 0px 10px 0px;
+    }
+    .signin_btn_link_sec{
+        padding: 15px 5px 24px 0px !important;
+    }
+    .signin_btn_link_sec .get_start_btn{
+        width: 40%;
+    }
+    .get_start_btn{
+        font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        padding-top: 12px;
+    }
+    .signin_link_sec{
+        font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 32px;
+    }
+    .left_signin_sec{
+        padding: 50px 0px 0px 0px;
+    }
+    .left_signin_sec .description_sec h1{
+        font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+    }
+    .left_signin_sec .description_sec p{
+        padding-right: 10px; 
+        font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: normal;
+    }
+    .right_signin_sec .description_sec h2{
+        font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    .right_signin_sec .description_sec .last_sec_p{
+        padding-right: 14px;
+        font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: normal;
+    }
+    .qr_head{
+        padding: 20px 0px 10px 0px;
+    }
+    .qr_head h2{
+        font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    .qr_code1{
+        padding: 20px 0px 10px 0px;
+    }
+    .qr_box_left .uber_app_link {
+        padding: 0px 0px 0px 20px;
+    }
+    .qr_box_left .right_arrow_icon {
+        padding-left: 0px;
+        padding-right: 16px;
+    }
+    .qr_code2 {
+        padding: 10px 0px 20px 0px;
+    }
+    .qr_box_right .uber_app_link {
+        padding: 0px 0px 0px 20px;
+    }
+    .qr_box_right .right_arrow_icon {
+        padding-left: 0px;
+        padding-right: 16px;
+    }
+    .footer_sec_row{
+        padding: 0 !important;
+    }
+    .footer_sec_row .link1{
+        padding-top: 50px;
+    }
+    .footer_sec_row .footer_links {
+        padding-top: 60px;
+    }
+    .left_side_icon a{
+        margin-right: 46px;
+    }
+    .app_link{
+        padding: 30px 20px
+    }
+    
+}
+
+
+
+@media (min-width: 992px) {
+    .navbar .navbar-nav .nav-link {
+        padding-left: 8px !important;
+    } 
+    .navbar .left_side_nav .navbar-brand{  
+        margin-left: 50px;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .left_sec{
+        padding-top: 50px;
+    }
+    .left_sec .title_part h1{
+        font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 52px;
+    }
+    .left_sec .form_part .location {
+        width: 55% !important;
+    }
+    .right_sec img{
+        width: 100%;
+    }
+    .left_img_sec img{
+        width: 100%;
+    }
+    .signin_btn_link_sec .get_start_btn{
+        width: 20%;
+    }
+    .qr_box_left .right_arrow_icon {
+        padding-left: 290px;
+        padding-right: 16px;
+    }
+    .qr_box_right .right_arrow_icon{
+        padding-left: 290px;
+        padding-right: 16px;
+    }
+    
+}
